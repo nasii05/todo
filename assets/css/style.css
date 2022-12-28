@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+}
+#name{
+    width: 800px;
+    height: 60px;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    background-color: aquamarine;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.btn:active{
+    background-color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+#itemdiv{
+    margin-top: 5px;
+    background-color: rgb(156, 252, 237);
+    /* border: 5px solid rgb(45, 33, 33); */
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 75%;
+    margin-left: 150px;
+    border-radius: 30px;
+}
+#itemdiv:hover{
+    background-color: rgb(25, 214, 214);
+}
+#items{
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* text-decoration: line-through; */
+}
+
+#container{
+    height: 1000px;
+    width: 100%;
+    background-color: aliceblue;
+}
+.formsec{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(208, 228, 246);
+    display: flex;
+    /* margin-left: 180px; */
+}
+#reset{
+    margin-left: 15px;
+    background-color: rgb(43, 193, 113);
+    color: black;
+}
+#reset:active{
+    background-color: white;
+}
+#reset:hover{
+    cursor: pointer;
+    background-color: white;
+}
+#delete{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+#delete:active{
+    background-color: black;
+}
+#delete:hover{
+    cursor: pointer;
+    background-color: rgb(22, 147, 129);
+}
+#favbutton{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+#favbutton:active{
+    background-color: black;
+}
+#favbutton:hover{
+    cursor: pointer;
+    background-color: rgb(22, 147, 129);
+}
+
+#doneit{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+#doneit:active{
+    background-color: rgb(64, 214, 192);
+}
+#doneit:hover{
+    cursor: pointer;
+    background-color: rgb(22, 147, 129);
+}
+
+#favpara{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+}
+
+#favlist{
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+#dltfav{
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 100%;
+    border: none;
+}
+#dltfav:active{
+    background-color: rgb(64, 214, 192);
+}
+#dltfav:hover{
+    cursor: pointer;
+    background-color: rgb(22, 147, 129);
+}
