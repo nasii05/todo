@@ -1,4 +1,3 @@
-
 let form =  document.querySelector('#form-id')
 let favorbtn = document.querySelector('#favourites')
 let reset = document.querySelector('#reset')
@@ -9,6 +8,8 @@ let listdiv = document.querySelector('#listdiv')
 const btn =  document.querySelector('.btn')
 let favpara = document.querySelector('#favpara')
 let dltfav = document.createElement('button')
+// let container = document.querySelector('#container')
+let dark = document.querySelector('#dark')
 let fav = [{}]
 // let favourites=[{}]
 
@@ -38,7 +39,7 @@ div.appendChild(favbtn)
 done.innerHTML = "✔"
 done.id = "doneit"
 div.appendChild(done)
-            //adding list as objects
+//adding list as objects
 
 let p ={
 new:h1.innerText,
@@ -49,8 +50,7 @@ fav.push(p)
 Input.value=""
 // console.log(fav)
 
-
-                //add the delete btn
+ //add the delete btn
 
 delbtn.addEventListener("click" , ()=>{
     li.remove()
@@ -74,8 +74,6 @@ favbtn.addEventListener('click',(e)=>{
     for(i in fav){
         if(fav[i].new == h1.innerText){
             fav[i].fav=true
-
-
         }
     }
     console.log(fav)
@@ -86,9 +84,7 @@ done.addEventListener('click',(evt)=>{
     alert("task done! ❤️")
 })
 
-
 })
-
 
 favorbtn.addEventListener('click',(e)=>{
     e.preventDefault()
@@ -98,6 +94,7 @@ favorbtn.addEventListener('click',(e)=>{
     console.log(s)
     s.forEach(e=>{
     //   favpara.innerText += e.new
+    //appending all the buttons and text to each div
       let ls = document.createElement('li')
       ls.id="favlist"
       ls.innerHTML = e.new
@@ -109,20 +106,26 @@ favorbtn.addEventListener('click',(e)=>{
       dltfav.addEventListener('click',(evt)=>{
          ls.remove()
          alert("favourites deleted !!")
+
       })
     })
     listdiv.appendChild(list)
-
-
 })
-
-
-
-
-
 
 reset.addEventListener('click',(evt)=>{
     location.reload()
+})
+dark.addEventListener('dblclick',(evt)=>{
+    let color = document.getElementById("container").style.backgroundColor = "rgb(68, 68, 68)";
+    let nav = document.getElementById('formsection').style.backgroundColor = "rgb(0, 0, 0)";
+    // let itdiv = document.getElementById("itemdiv").children.style.backgroundColor = "rgb(93, 93, 93)";
+    // console.log('dark')
+})
+dark.addEventListener('click',(evt)=>{
+    let color = document.getElementById("container").style.backgroundColor = "aliceblue";
+    let nav = document.getElementById('formsection').style.backgroundColor = "rgb(208, 228, 246)";
+    // let itdiv = document.getElementById("itemdiv").children.style.backgroundColor = "rgb(93, 93, 93)";
+    // console.log('dark')
 })
 
 
